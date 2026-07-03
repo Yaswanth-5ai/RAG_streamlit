@@ -1,0 +1,34 @@
+2026-07-03 17:44:31,356 | INFO     | app.query.query_pipeline | Initializing Query Pipeline.
+2026-07-03 17:44:31,361 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-03 17:44:40,861 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-03 17:44:41,065 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-03 17:44:41,435 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-03 17:45:00,347 | INFO     | app.query.query_pipeline | Processing query: what is machine learning?
+2026-07-03 17:45:00,347 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-03 17:45:00,348 | INFO     | app.vectorstore.chroma_store | Searching for query: what is machine learning?
+2026-07-03 17:45:00,354 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-03 17:45:00,491 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-03 17:45:00,491 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-03 17:45:00,491 | INFO     | app.query.query_pipeline | Retrieved 3 documents.
+2026-07-03 17:45:00,492 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-03 17:45:00,492 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3798 characters.
+2026-07-03 17:45:00,492 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-03 17:50:02,363 | INFO     | app.llm.ollama_client | LLM response generated in 301.87 sec.
+2026-07-03 17:50:02,364 | INFO     | app.query.query_pipeline | Answer generated successfully.
+2026-07-03 17:57:33,032 | INFO     | app.query.query_pipeline | Initializing Query Pipeline.
+2026-07-03 17:57:33,033 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-03 17:57:43,874 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-03 17:57:44,012 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-03 17:57:44,349 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-03 17:58:07,633 | INFO     | app.query.query_pipeline | Processing query: what is machine learning?
+2026-07-03 17:58:07,634 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-03 17:58:07,634 | INFO     | app.vectorstore.chroma_store | Searching for query: what is machine learning?
+2026-07-03 17:58:07,634 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-03 17:58:07,723 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-03 17:58:07,723 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-03 17:58:07,723 | INFO     | app.query.query_pipeline | Retrieved 3 documents.
+2026-07-03 17:58:07,724 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-03 17:58:07,724 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3798 characters.
+2026-07-03 17:58:07,724 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-03 18:03:28,719 | INFO     | app.llm.ollama_client | LLM response generated in 320.99 sec.
+2026-07-03 18:03:28,719 | INFO     | app.query.query_pipeline | Answer generated successfully.
