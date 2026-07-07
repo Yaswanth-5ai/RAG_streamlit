@@ -162,3 +162,86 @@ class ChromaStore:
             )
 
             raise VectorStoreError(str(e)) from e
+        
+    def list_documents(self) -> list[dict]:
+        """
+        Return unique indexed documents.
+        """
+
+        logger.info("Fetching indexed documents.")
+
+        try:
+
+            result = self.vector_store.get(
+                include=["metadatas"]
+            )
+
+            metadatas = result.get("metadatas", [])
+
+            documents = {}
+
+            for metadata in metadatas:
+
+                document_name = metadata.get("document_name")
+
+                if not document_name:
+                    continue
+
+                if document_name not in documents:
+
+                    documents[document_name] = {
+                        "document_name": document_name,
+                        "document_id": metadata.get("document_id"),
+                        "file_type": metadata.get("file_type"),
+                        "ingested_at": metadata.get("ingested_at"),
+                        "total_chunks": metadata.get("total_chunks"),
+                    }
+
+            logger.info(
+                f"Found {len(documents)} document(s)."
+            )
+
+            return sorted(
+                documents.values(),
+                key=lambda x: x["document_name"].lower()
+            )
+
+        except Exception:
+
+            logger.exception(
+                "Failed to fetch documents."
+            )
+
+            raise
+
+
+    def delete_document( self, document_name: str,) -> bool:
+        """
+        Delete all chunks belonging to a document.
+        """
+
+        logger.info(
+            f"Deleting embeddings for: {document_name}"
+        )
+
+        try:
+
+            self.vector_store._collection.delete(
+                where={
+                    "document_name": document_name
+                }
+            )
+
+            logger.info(
+                "Embeddings deleted successfully."
+            )
+
+            return True
+
+        except Exception as e:
+
+            logger.exception(
+                "Failed to delete embeddings."
+            )
+
+            raise VectorStoreError(str(e)) from e

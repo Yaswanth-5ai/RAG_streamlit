@@ -12,15 +12,18 @@ logger = get_logger(__name__)
 
 class DocumentLoader:
     """
-    Loads all PDF documents from a directory.
+    Loads PDF documents either from a directory or a single file.
     """
 
-    def __init__(self, data_path: str):
-        self.data_path = Path(data_path)
+    def __init__(self, data_path: str | None = None):
+        self.data_path = Path(data_path) if data_path else None
 
-    def load_documents(self) -> list[Document]:
+    def load_directory(self) -> list[Document]:
 
         try:
+
+            if self.data_path is None:
+                raise DocumentLoadError("Data path is not configured.")
 
             if not self.data_path.exists():
                 raise DocumentLoadError(
@@ -43,15 +46,11 @@ class DocumentLoader:
 
             for pdf_file in pdf_files:
 
-                logger.info(
-                    f"Loading PDF: {pdf_file.name}"
-                )
+                logger.info(f"Loading PDF: {pdf_file.name}")
 
                 loader = PyPDFLoader(str(pdf_file))
 
-                docs = loader.load()
-
-                documents.extend(docs)
+                documents.extend(loader.load())
 
             logger.info(
                 f"Loaded {len(documents)} pages successfully."
@@ -61,8 +60,35 @@ class DocumentLoader:
 
         except Exception as e:
 
-            logger.exception(
-                "Failed to load PDF documents."
+            logger.exception("Failed to load PDF documents.")
+
+            raise DocumentLoadError(str(e)) from e
+
+    def load_file(self, file_path: str) -> list[Document]:
+
+        try:
+
+            pdf_path = Path(file_path)
+
+            if not pdf_path.exists():
+                raise DocumentLoadError(
+                    f"File does not exist: {pdf_path}"
+                )
+
+            logger.info(f"Loading PDF: {pdf_path.name}")
+
+            loader = PyPDFLoader(str(pdf_path))
+
+            documents = loader.load()
+
+            logger.info(
+                f"Loaded {len(documents)} pages successfully."
             )
+
+            return documents
+
+        except Exception as e:
+
+            logger.exception("Failed to load PDF.")
 
             raise DocumentLoadError(str(e)) from e

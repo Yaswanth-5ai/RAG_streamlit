@@ -7,6 +7,11 @@ from app.ingestion.loader import DocumentLoader
 from app.ingestion.splitter import DocumentSplitter
 from app.vectorstore.chroma_store import ChromaStore
 
+
+from pathlib import Path
+from uuid import uuid4
+from datetime import datetime, UTC
+
 logger = get_logger(__name__)
 
 
@@ -23,57 +28,101 @@ class IngestionPipeline:
             embedder=self.embedder
         )
 
-    def run(self) -> None:
+    def run(self):
+
+        logger.info("Starting ingestion pipeline.")
+        self.vector_store.reset_collection()
+        self.ingest_directory()
+        logger.info("Ingestion completed successfully.")
+
+    
+    def _process_document(
+        self,
+        documents,
+        document_name: str,
+    ):
         """
-        Execute the complete ingestion pipeline.
+        Complete processing of a document:
+        Split -> Add Metadata -> Store in ChromaDB
         """
 
-        try:
+        logger.info(
+            f"Processing document: {document_name}"
+        )
 
-            logger.info("Starting ingestion pipeline.")
+        chunks = self.splitter.split_documents(documents)
 
-            documents = self.loader.load_documents()
+        logger.info(
+            f"Generated {len(chunks)} chunks."
+        )
 
-            logger.info(
-                f"Loaded {len(documents)} pages."
+        chunks = self._add_metadata(
+            chunks=chunks,
+            document_name=document_name,
+        )
+
+        self.vector_store.index_documents(chunks)
+
+        logger.info(
+            f"Stored Chunks: {self.vector_store.count()}"
+        )
+
+    def ingest_directory(self):
+
+        logger.info("Starting directory ingestion.")
+        pdf_files = list(
+            Path(settings.DATA_PATH).glob("*.pdf")
+        )
+        logger.info(
+            f"Found {len(pdf_files)} PDF file(s)."
+        )
+        for pdf_file in pdf_files:
+
+            documents = self.loader.load_file(
+                str(pdf_file))
+
+            self._process_document(
+                documents,
+                pdf_file.name,
             )
 
-            chunks = self.splitter.split_documents(
-                documents
-            )
+    def ingest_file(self,file_path: str):
 
-            logger.info(
-                f"Generated {len(chunks)} chunks."
-            )
+        documents = self.loader.load_file(file_path)
+        self._process_document(
+        documents,
+        Path(file_path).name)
 
-            self.vector_store.reset_collection()
+    def _add_metadata(
+        self,
+        chunks,
+        document_name: str,
+    ):
+        """
+        Enrich every chunk with additional metadata.
+        """
 
-            self.vector_store.index_documents(
-                chunks
-            )
+        logger.info(
+            "Adding metadata to document chunks."
+        )
 
-            count = self.vector_store.count()
+        document_id = str(uuid4())
 
-            logger.info(
-                f"Stored Chunks: {count}"
-            )
+        total_chunks = len(chunks)
 
-            logger.info(
-                "Ingestion completed successfully."
-            )
+        ingested_at = datetime.utcnow().isoformat()
 
-        except RAGException:
+        for index, chunk in enumerate(chunks, start=1):
 
-            logger.exception(
-                "Ingestion pipeline failed."
-            )
+            chunk.metadata["document_id"] = document_id
+            chunk.metadata["document_name"] = document_name
+            chunk.metadata["chunk_id"] = index
+            chunk.metadata["total_chunks"] = total_chunks
+            chunk.metadata["ingested_at"] = ingested_at
+            chunk.metadata["file_type"] = Path(document_name).suffix.lower()
 
-            raise
+        logger.info(
+            f"Metadata added to {total_chunks} chunks."
+        )
 
-        except Exception as e:
-
-            logger.exception(
-                "Unexpected error in ingestion pipeline."
-            )
-
-            raise
+        return chunks

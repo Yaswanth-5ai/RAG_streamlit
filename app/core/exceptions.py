@@ -21,10 +21,21 @@ class VectorStoreError(RAGException):
 class RetrievalError(RAGException):
     """Raised when retrieval fails."""
 
-
 class PromptBuildError(RAGException):
     """Raised when prompt creation fails."""
 
 
 class LLMError(RAGException):
     """Raised when the language model request fails."""
+
+
+class DocumentManagerError(RAGException):
+    """Raised when document management operations fail."""
+
+
+class QueryPipelineError(RAGException):
+    """Raised when query pipeline fails."""
+
+
+class IngestionPipelineError(RAGException):
+    """Raised when ingestion pipeline fails."""
