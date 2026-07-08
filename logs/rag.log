@@ -339,3 +339,141 @@
 2026-07-07 21:12:51,821 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
 2026-07-07 21:13:04,028 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
 2026-07-07 21:13:04,072 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 14:33:27,842 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 14:33:27,849 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 14:33:29,296 | ERROR    | app.embedding.embedder | Failed to load embedding model.
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\app\embedding\embedder.py", line 21, in __init__
+    self.model = SentenceTransformer(model_name)
+                 ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\sentence_transformer\model.py", line 188, in __init__
+    super().__init__(
+    ~~~~~~~~~~~~~~~~^
+        model_name_or_path=model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<13 lines>...
+        default_prompt_name=default_prompt_name,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 216, in __init__
+    modules, self.module_kwargs = self._load_modules(
+                                  ~~~~~~~~~~~~~~~~~~^
+        model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        config_kwargs=config_kwargs,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 1002, in _load_modules
+    return self._load_config_modules(model_name_or_path, **load_kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\model.py", line 1208, in _load_config_modules
+    module = module_class.load(
+        model_name_or_path,
+    ...<11 lines>...
+        backend=self.backend,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 2030, in load
+    return cls(model_name_or_path=model_name_or_path, **init_kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\util\decorators.py", line 87, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 639, in __init__
+    config, is_peft_model = self._load_config(model_name_or_path, backend, config_kwargs)
+                            ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\sentence_transformers\base\modules\transformer.py", line 1647, in _load_config
+    adapter_config_file = find_adapter_config_file(
+        model_name_or_path,
+    ...<4 lines>...
+        local_files_only=config_kwargs.get("local_files_only", False),
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\transformers\utils\peft_utils.py", line 84, in find_adapter_config_file
+    adapter_cached_filename = cached_file(
+        model_id,
+    ...<11 lines>...
+        _raise_exceptions_for_connection_errors=False,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\transformers\utils\hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\transformers\utils\hub.py", line 527, in cached_files
+    raise e
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\transformers\utils\hub.py", line 437, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1016, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1149, in _hf_hub_download_to_cache_dir
+    _get_metadata_or_catch_error(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        repo_id=repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        retry_on_errors=True,
+        ^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1691, in _get_metadata_or_catch_error
+    metadata = get_hf_file_metadata(
+        url=url,
+    ...<4 lines>...
+        retry_on_errors=retry_on_errors,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\utils\_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\file_download.py", line 1613, in get_hf_file_metadata
+    response = _httpx_follow_relative_redirects_with_backoff(
+        method="HEAD", url=url, headers=hf_headers, timeout=timeout, retry_on_errors=retry_on_errors
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 700, in _httpx_follow_relative_redirects_with_backoff
+    response = http_backoff(
+        method=method,
+    ...<3 lines>...
+        **no_retry_kwargs,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 574, in http_backoff
+    return next(
+        _http_backoff_base(
+    ...<9 lines>...
+        )
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\huggingface_hub\utils\_http.py", line 482, in _http_backoff_base
+    response = client.request(method=method, url=url, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 901, in send
+    raise RuntimeError("Cannot send a request, as the client has been closed.")
+RuntimeError: Cannot send a request, as the client has been closed.
+2026-07-08 14:38:24,741 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 14:38:24,741 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 14:38:32,269 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 14:38:33,033 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 14:38:33,034 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 14:38:33,423 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 14:38:33,423 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 14:38:53,788 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 14:38:53,788 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 14:39:00,113 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 14:39:00,280 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 14:39:00,281 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 14:39:00,670 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 14:39:00,671 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 14:39:34,604 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 14:39:35,325 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 14:39:35,345 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337

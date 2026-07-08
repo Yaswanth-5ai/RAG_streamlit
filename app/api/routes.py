@@ -1,11 +1,9 @@
 from fastapi import APIRouter, Request
-from fastapi import UploadFile, File
-
-from pathlib import Path
-import shutil
-
 from fastapi import UploadFile, File, HTTPException
 
+from app.config.settings import settings
+from pathlib import Path
+import shutil
 from app.api.schemas import IngestResponse
 from app.ingestion.pipeline import IngestionPipeline
 
@@ -31,6 +29,23 @@ def health():
         "status": "healthy",
         "application": "Production RAG API",
         "version": "2.0.0"
+    }
+
+
+@router.get("/stats")
+def stats(request: Request):
+
+    container = request.app.state.container
+
+    documents = container.document_service.list_documents()
+
+    chunks = container.vector_store.count()
+
+    return {
+        "documents": len(documents),
+        "chunks": chunks,
+        "embedding_model": settings.EMBEDDING_MODEL,
+        "llm_model": settings.LLM_MODEL,
     }
 
 
@@ -122,3 +137,4 @@ def delete_document(
     return {
         "message": "Document deleted successfully."
     }
+
