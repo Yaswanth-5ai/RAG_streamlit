@@ -477,3 +477,870 @@ RuntimeError: Cannot send a request, as the client has been closed.
 2026-07-08 14:39:34,604 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
 2026-07-08 14:39:35,325 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
 2026-07-08 14:39:35,345 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-08 16:06:19,223 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:06:19,223 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:06:25,905 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:06:26,020 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:06:26,020 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:06:26,340 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:06:26,341 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:06:37,947 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:06:37,948 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:06:44,249 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:06:44,370 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:06:44,371 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:06:44,755 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:06:44,756 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:06:59,523 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:06:59,523 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:07:05,876 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:07:06,086 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:07:06,087 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:07:06,622 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:07:06,623 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:07:18,699 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:07:18,700 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:07:25,089 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:07:25,195 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:07:25,196 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:07:25,518 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:07:25,518 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:07:37,418 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:07:37,419 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:07:43,728 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:07:43,834 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:07:43,834 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:07:44,155 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:07:44,156 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:07:44,170 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:07:44,240 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:07:44,251 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:07:44,271 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:07:44,273 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-08 16:09:12,733 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:09:12,734 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:09:19,394 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:09:19,493 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:09:19,493 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:09:19,842 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:09:19,843 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:09:32,593 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:09:32,594 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:09:38,491 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:09:38,596 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:09:38,596 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:09:38,917 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:09:38,918 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 16:09:38,932 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:39,002 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:39,007 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:39,027 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:39,028 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-08 16:09:47,182 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:47,223 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:47,229 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:47,257 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:47,258 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-08 16:09:47,295 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:47,327 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:47,336 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-08 16:09:47,364 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-08 16:09:47,366 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-08 16:10:01,664 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 16:10:01,667 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 16:10:07,944 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 16:10:08,091 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 16:10:08,092 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 16:10:08,485 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 16:10:08,485 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 22:28:08,936 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 22:28:08,937 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 22:28:15,763 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 22:28:16,177 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 22:28:16,177 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 22:28:17,129 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 22:28:17,129 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 22:32:47,182 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 22:32:47,182 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 22:32:54,019 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 22:32:54,300 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 22:32:54,301 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 22:32:55,315 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 22:32:55,315 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 22:35:15,901 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 22:35:15,901 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 22:35:21,551 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 22:35:21,890 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 22:35:21,891 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 22:35:22,906 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 22:35:22,907 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 22:35:48,457 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 22:35:48,458 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 22:35:54,330 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 22:35:54,497 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 22:35:54,498 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 22:35:54,860 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 22:35:54,860 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-08 22:41:15,374 | INFO     | app.container.container | Initializing Application Container.
+2026-07-08 22:41:15,374 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-08 22:41:22,033 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-08 22:41:22,320 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-08 22:41:22,321 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-08 22:41:23,254 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-08 22:41:23,255 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:06:37,231 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:06:37,231 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:06:47,322 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:06:47,522 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:06:47,522 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:06:47,976 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:06:47,976 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:15:06,984 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:15:06,984 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:15:13,044 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:15:13,145 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:15:13,145 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:15:13,490 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:15:13,491 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:17:38,417 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:17:38,418 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:17:44,867 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:17:44,977 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:17:44,977 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:17:45,302 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:17:45,302 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:17:55,615 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:17:55,615 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:18:01,840 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:18:01,944 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:18:01,944 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:18:02,278 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:18:02,278 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:18:18,281 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:18:18,532 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:18:18,539 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:18:18,565 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:18:18,578 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:21:28,350 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:21:28,381 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:21:28,383 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:22:31,614 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:22:31,614 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:22:37,908 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:22:38,021 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:22:38,021 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:22:38,361 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:22:38,361 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:22:38,375 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:22:38,466 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:22:38,471 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:22:38,500 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:22:38,502 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:26:21,608 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:26:21,608 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:26:27,769 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:26:27,882 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:26:27,882 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:26:28,247 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:26:28,247 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:26:35,205 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:26:35,319 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:26:35,326 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:26:35,362 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:26:35,363 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:30:13,650 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:30:13,650 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:30:19,873 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:30:20,029 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:30:20,029 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:30:20,382 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:30:20,383 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:30:20,394 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:30:20,475 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:30:20,480 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:30:20,507 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:30:20,508 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:30:53,152 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:30:53,152 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:30:59,598 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:30:59,708 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:30:59,708 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:31:00,039 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:31:00,039 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:32:29,677 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:32:29,780 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:32:29,785 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:32:29,814 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:32:29,816 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:33:41,308 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:33:41,348 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:33:41,354 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:33:41,379 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:33:41,380 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:33:43,456 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:33:43,487 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:33:43,492 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:33:43,521 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:33:43,522 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:36:50,261 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:36:50,301 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:36:50,302 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:37:16,559 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 11:37:16,560 | INFO     | app.vectorstore.chroma_store | Searching for query: hi
+2026-07-09 11:37:16,560 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 11:37:16,963 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 11:37:16,963 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 11:37:16,963 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 11:37:16,964 | INFO     | app.prompt.builder | Prompt built successfully. Length: 2160 characters.
+2026-07-09 11:37:16,964 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 11:39:52,137 | INFO     | app.llm.ollama_client | LLM response generated in 155.18 sec.
+2026-07-09 11:40:20,558 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:40:20,558 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:40:27,475 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:40:27,611 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:40:27,611 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:40:27,997 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:40:27,998 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:41:59,949 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:41:59,949 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:42:07,007 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:42:07,149 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:42:07,150 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:42:07,515 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:42:07,516 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:42:07,560 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:42:07,659 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:42:07,664 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:42:07,695 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:42:07,697 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:42:35,891 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:42:35,926 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:42:35,931 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 11:42:35,959 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 11:42:35,961 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 11:58:15,031 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:58:15,031 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:58:21,102 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:58:21,226 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:58:21,226 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:58:21,610 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:58:21,610 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:58:33,800 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:58:33,801 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 11:58:39,289 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 11:58:39,478 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 11:58:39,501 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 11:58:39,948 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 11:58:39,948 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 11:59:59,724 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 11:59:59,725 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:00:05,544 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:00:05,649 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:00:05,649 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:00:05,998 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:00:05,999 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:00:18,353 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:00:18,354 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:00:24,075 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:00:24,185 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:00:24,185 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:00:24,521 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:00:24,522 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:01:29,988 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:01:30,075 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:01:30,080 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:01:30,113 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:01:30,114 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:02:02,885 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:02:02,922 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:02:02,928 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:02:02,953 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:02:02,955 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:04:52,207 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:04:52,208 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:04:58,048 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:04:58,151 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:04:58,151 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:04:58,523 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:04:58,524 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:05:32,974 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:05:32,974 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:05:38,807 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:05:38,912 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:05:38,912 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:05:39,267 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:05:39,267 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:05:39,282 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:39,355 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:39,359 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:39,379 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:39,381 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:05:45,961 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:45,995 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:45,999 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:46,024 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:46,025 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:05:47,459 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:47,506 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:47,512 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:47,544 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:47,546 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:05:58,838 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:58,874 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:58,878 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:05:58,906 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:05:58,907 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:09:44,064 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:09:44,064 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:09:50,394 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:09:50,501 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:09:50,502 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:09:50,830 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:09:50,831 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:13:01,453 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:13:01,454 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:13:07,694 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:13:07,991 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:13:07,991 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:13:08,321 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:13:08,322 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:13:43,624 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:43,729 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:13:43,735 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:43,763 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:13:43,764 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:13:49,444 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:49,481 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:13:49,487 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:49,512 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:13:49,513 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:13:49,521 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:13:49,521 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:13:49,522 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:13:54,674 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:13:54,679 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:13:54,679 | INFO     | app.ingestion.loader | Loading PDF: resume_1.pdf
+2026-07-09 12:13:55,604 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:13:55,604 | INFO     | app.ingestion.pipeline | Processing document: resume_1.pdf
+2026-07-09 12:13:55,604 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:13:55,605 | INFO     | app.ingestion.splitter | Generated 9 chunks.
+2026-07-09 12:13:55,605 | INFO     | app.ingestion.pipeline | Generated 9 chunks.
+2026-07-09 12:13:55,605 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:13:55,606 | INFO     | app.ingestion.pipeline | Metadata added to 9 chunks.
+2026-07-09 12:13:55,606 | INFO     | app.vectorstore.chroma_store | Indexing 9 chunks...
+2026-07-09 12:13:55,606 | INFO     | app.embedding.embedder | Generating embeddings for 9 chunks.
+2026-07-09 12:13:57,227 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:13:57,335 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:13:57,336 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:13:57,336 | INFO     | app.ingestion.pipeline | Stored Chunks: 346
+2026-07-09 12:13:57,375 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:57,410 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:13:57,415 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:13:57,436 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:13:57,438 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:15:00,847 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:00,986 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:00,991 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:01,033 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:01,034 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:15:06,094 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:06,150 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:06,155 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:06,194 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:06,195 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:15:06,206 | INFO     | app.services.document_service | Deleting document: resume_1.pdf
+2026-07-09 12:15:06,222 | INFO     | app.storage.document_manager | Deleted document: resume_1.pdf
+2026-07-09 12:15:06,222 | INFO     | app.vectorstore.chroma_store | Deleting embeddings for: resume_1.pdf
+2026-07-09 12:15:06,453 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
+2026-07-09 12:15:06,478 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:06,511 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:06,516 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:06,543 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:06,544 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:15:21,747 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:21,781 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:21,789 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:21,830 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:21,840 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:15:21,854 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:15:21,855 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:15:21,856 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:15:27,302 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:15:27,307 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:15:27,307 | INFO     | app.ingestion.loader | Loading PDF: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:27,492 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:15:27,492 | INFO     | app.ingestion.pipeline | Processing document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:27,493 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:15:27,493 | INFO     | app.ingestion.splitter | Generated 6 chunks.
+2026-07-09 12:15:27,493 | INFO     | app.ingestion.pipeline | Generated 6 chunks.
+2026-07-09 12:15:27,493 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:15:27,494 | INFO     | app.ingestion.pipeline | Metadata added to 6 chunks.
+2026-07-09 12:15:27,494 | INFO     | app.vectorstore.chroma_store | Indexing 6 chunks...
+2026-07-09 12:15:27,494 | INFO     | app.embedding.embedder | Generating embeddings for 6 chunks.
+2026-07-09 12:15:27,914 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:15:28,026 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:15:28,027 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:28,027 | INFO     | app.ingestion.pipeline | Stored Chunks: 343
+2026-07-09 12:15:28,062 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:28,116 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:28,120 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:28,156 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:28,157 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:45,374 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:45,415 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:45,419 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:45,456 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:45,458 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:45,491 | INFO     | app.services.document_service | Deleting document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:45,501 | INFO     | app.storage.document_manager | Deleted document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:45,502 | INFO     | app.vectorstore.chroma_store | Deleting embeddings for: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:45,636 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
+2026-07-09 12:15:45,667 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:45,709 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:45,714 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:45,744 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:45,746 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:15:45,753 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:15:45,754 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:15:45,754 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:15:50,942 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:15:50,948 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:15:50,949 | INFO     | app.ingestion.loader | Loading PDF: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:51,400 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:15:51,400 | INFO     | app.ingestion.pipeline | Processing document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:51,400 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:15:51,401 | INFO     | app.ingestion.splitter | Generated 6 chunks.
+2026-07-09 12:15:51,401 | INFO     | app.ingestion.pipeline | Generated 6 chunks.
+2026-07-09 12:15:51,401 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:15:51,402 | INFO     | app.ingestion.pipeline | Metadata added to 6 chunks.
+2026-07-09 12:15:51,402 | INFO     | app.vectorstore.chroma_store | Indexing 6 chunks...
+2026-07-09 12:15:51,402 | INFO     | app.embedding.embedder | Generating embeddings for 6 chunks.
+2026-07-09 12:15:51,764 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:15:51,877 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:15:51,878 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:51,878 | INFO     | app.ingestion.pipeline | Stored Chunks: 343
+2026-07-09 12:15:51,921 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:51,967 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:51,972 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:52,006 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:52,008 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:58,893 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:58,939 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:58,944 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:58,974 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:15:58,975 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:15:58,992 | INFO     | app.services.document_service | Deleting document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:59,003 | INFO     | app.storage.document_manager | Deleted document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:59,003 | INFO     | app.vectorstore.chroma_store | Deleting embeddings for: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:15:59,141 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
+2026-07-09 12:15:59,175 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:59,216 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:59,220 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:15:59,248 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:15:59,249 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:15:59,256 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:15:59,257 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:15:59,257 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:16:04,574 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:16:04,596 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:16:04,596 | INFO     | app.ingestion.loader | Loading PDF: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:16:04,793 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:16:04,793 | INFO     | app.ingestion.pipeline | Processing document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:16:04,793 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:16:04,794 | INFO     | app.ingestion.splitter | Generated 6 chunks.
+2026-07-09 12:16:04,794 | INFO     | app.ingestion.pipeline | Generated 6 chunks.
+2026-07-09 12:16:04,795 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:16:04,795 | INFO     | app.ingestion.pipeline | Metadata added to 6 chunks.
+2026-07-09 12:16:04,795 | INFO     | app.vectorstore.chroma_store | Indexing 6 chunks...
+2026-07-09 12:16:04,795 | INFO     | app.embedding.embedder | Generating embeddings for 6 chunks.
+2026-07-09 12:16:05,095 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:16:05,199 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:16:05,200 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:16:05,200 | INFO     | app.ingestion.pipeline | Stored Chunks: 343
+2026-07-09 12:16:05,238 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:05,284 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:05,288 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:05,319 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:05,320 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:16:11,805 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:11,851 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:11,888 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:11,893 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:11,901 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:11,907 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:11,933 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:11,935 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:16:11,952 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:16:11,954 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:16:11,971 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:16:11,971 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:16:11,971 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:16:18,499 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:16:18,504 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:16:18,504 | INFO     | app.ingestion.loader | Loading PDF: resume_1.pdf
+2026-07-09 12:16:18,618 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:16:18,618 | INFO     | app.ingestion.pipeline | Processing document: resume_1.pdf
+2026-07-09 12:16:18,619 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:16:18,619 | INFO     | app.ingestion.splitter | Generated 9 chunks.
+2026-07-09 12:16:18,619 | INFO     | app.ingestion.pipeline | Generated 9 chunks.
+2026-07-09 12:16:18,620 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:16:18,620 | INFO     | app.ingestion.pipeline | Metadata added to 9 chunks.
+2026-07-09 12:16:18,620 | INFO     | app.vectorstore.chroma_store | Indexing 9 chunks...
+2026-07-09 12:16:18,621 | INFO     | app.embedding.embedder | Generating embeddings for 9 chunks.
+2026-07-09 12:16:19,048 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:16:19,167 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:16:19,169 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:16:19,169 | INFO     | app.ingestion.pipeline | Stored Chunks: 352
+2026-07-09 12:16:19,211 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:19,259 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:16:19,264 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:16:19,302 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:16:19,303 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:19:31,927 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 12:19:31,927 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:19:37,618 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:19:37,756 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:19:37,757 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 12:19:38,144 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 12:19:38,145 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 12:19:38,159 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:38,266 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:19:38,271 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:38,301 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:19:38,302 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:19:42,299 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:42,339 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:19:42,343 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:42,369 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:19:42,370 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:19:42,381 | INFO     | app.services.document_service | Deleting document: resume_1.pdf
+2026-07-09 12:19:42,391 | INFO     | app.storage.document_manager | Deleted document: resume_1.pdf
+2026-07-09 12:19:42,392 | INFO     | app.vectorstore.chroma_store | Deleting embeddings for: resume_1.pdf
+2026-07-09 12:19:42,520 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
+2026-07-09 12:19:42,550 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:42,587 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:19:42,591 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:42,619 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:19:42,620 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:19:44,759 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:44,797 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:19:44,801 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:44,831 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:19:44,832 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 343
+2026-07-09 12:19:44,841 | INFO     | app.services.document_service | Deleting document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:19:44,851 | INFO     | app.storage.document_manager | Deleted document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:19:44,851 | INFO     | app.vectorstore.chroma_store | Deleting embeddings for: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:19:44,983 | INFO     | app.vectorstore.chroma_store | Embeddings deleted successfully.
+2026-07-09 12:19:45,013 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:45,053 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:45,058 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:45,084 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:45,086 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:19:56,101 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:56,146 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:56,150 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:56,190 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:56,192 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:19:57,587 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:57,621 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:57,626 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:19:57,650 | INFO     | app.vectorstore.chroma_store | Found 1 document(s).
+2026-07-09 12:19:57,651 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 337
+2026-07-09 12:19:57,661 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:19:57,661 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:19:57,661 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:20:03,197 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:20:03,202 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:20:03,203 | INFO     | app.ingestion.loader | Loading PDF: resume_1.pdf
+2026-07-09 12:20:03,474 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:20:03,474 | INFO     | app.ingestion.pipeline | Processing document: resume_1.pdf
+2026-07-09 12:20:03,474 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:20:03,475 | INFO     | app.ingestion.splitter | Generated 9 chunks.
+2026-07-09 12:20:03,475 | INFO     | app.ingestion.pipeline | Generated 9 chunks.
+2026-07-09 12:20:03,476 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:20:03,476 | INFO     | app.ingestion.pipeline | Metadata added to 9 chunks.
+2026-07-09 12:20:03,476 | INFO     | app.vectorstore.chroma_store | Indexing 9 chunks...
+2026-07-09 12:20:03,476 | INFO     | app.embedding.embedder | Generating embeddings for 9 chunks.
+2026-07-09 12:20:03,907 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:20:04,021 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:20:04,023 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:20:04,023 | INFO     | app.ingestion.pipeline | Stored Chunks: 346
+2026-07-09 12:20:04,063 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:04,117 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:04,122 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:04,158 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:04,159 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:20:06,948 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:06,996 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:07,000 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:07,039 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:07,040 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:20:12,010 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:12,054 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:12,060 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:12,098 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:12,099 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:20:14,374 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:14,410 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:14,414 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:14,446 | INFO     | app.vectorstore.chroma_store | Found 2 document(s).
+2026-07-09 12:20:14,447 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 346
+2026-07-09 12:20:14,455 | INFO     | app.ingestion.pipeline | Initializing Ingestion Pipeline.
+2026-07-09 12:20:14,456 | INFO     | app.ingestion.splitter | Initializing DocumentSplitter (chunk_size=1000, chunk_overlap=200)
+2026-07-09 12:20:14,456 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 12:20:21,323 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 12:20:21,327 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 12:20:21,327 | INFO     | app.ingestion.loader | Loading PDF: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:20:21,519 | INFO     | app.ingestion.loader | Loaded 2 pages successfully.
+2026-07-09 12:20:21,520 | INFO     | app.ingestion.pipeline | Processing document: Vasantha puvvada Resume New Resume.pdf
+2026-07-09 12:20:21,520 | INFO     | app.ingestion.splitter | Splitting 2 document(s).
+2026-07-09 12:20:21,521 | INFO     | app.ingestion.splitter | Generated 6 chunks.
+2026-07-09 12:20:21,521 | INFO     | app.ingestion.pipeline | Generated 6 chunks.
+2026-07-09 12:20:21,521 | INFO     | app.ingestion.pipeline | Adding metadata to document chunks.
+2026-07-09 12:20:21,521 | INFO     | app.ingestion.pipeline | Metadata added to 6 chunks.
+2026-07-09 12:20:21,521 | INFO     | app.vectorstore.chroma_store | Indexing 6 chunks...
+2026-07-09 12:20:21,522 | INFO     | app.embedding.embedder | Generating embeddings for 6 chunks.
+2026-07-09 12:20:21,841 | INFO     | app.embedding.embedder | Document embeddings generated successfully.
+2026-07-09 12:20:21,938 | INFO     | app.vectorstore.chroma_store | Document indexing completed successfully.
+2026-07-09 12:20:21,945 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:20:21,945 | INFO     | app.ingestion.pipeline | Stored Chunks: 352
+2026-07-09 12:20:21,988 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:22,037 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:22,042 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:22,074 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:22,075 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:20:51,590 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:51,633 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:51,638 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:51,667 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:51,669 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:20:52,470 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:52,512 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:52,517 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 12:20:52,546 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 12:20:52,547 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 12:20:52,559 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 12:20:52,559 | INFO     | app.vectorstore.chroma_store | Searching for query: what are skill for vasanatha puvvada have from her resume?
+2026-07-09 12:20:52,560 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 12:20:52,634 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 12:20:52,634 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 12:20:52,634 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 12:20:52,635 | INFO     | app.prompt.builder | Prompt built successfully. Length: 2695 characters.
+2026-07-09 12:20:52,635 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 12:23:20,290 | INFO     | app.llm.ollama_client | LLM response generated in 147.66 sec.
+2026-07-09 14:39:56,028 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 14:39:56,029 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 14:41:09,987 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 14:41:10,210 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 14:41:10,211 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 14:41:10,582 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 14:41:10,582 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 14:41:10,611 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:41:10,738 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:41:10,744 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:41:10,770 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:41:10,772 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 14:41:25,632 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:41:25,705 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:41:25,716 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:41:25,780 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:41:25,783 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 14:42:33,753 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:42:33,798 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:42:33,803 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:42:33,841 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:42:33,845 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 14:42:43,037 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:42:43,090 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:42:43,100 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 14:42:43,168 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 14:42:43,171 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 14:42:43,213 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 14:42:43,214 | INFO     | app.vectorstore.chroma_store | Searching for query: what are tecnical skill that vasantha puvvada have in her resume ?
+2026-07-09 14:42:43,214 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 14:42:43,319 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 14:42:43,320 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 14:42:43,320 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 14:42:43,321 | INFO     | app.prompt.builder | Prompt built successfully. Length: 2703 characters.
+2026-07-09 14:42:43,321 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 14:45:44,553 | INFO     | app.llm.ollama_client | LLM response generated in 181.23 sec.
+2026-07-09 15:01:20,745 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:01:20,745 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:01:31,304 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:01:31,586 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:01:31,586 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:01:32,580 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:01:32,581 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:02:03,296 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:02:03,296 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:02:24,276 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:02:24,659 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:02:24,660 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:02:25,718 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:02:25,718 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:02:47,099 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:02:47,099 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:03:05,586 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:03:05,872 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:03:05,873 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:03:06,834 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:03:06,834 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:03:06,879 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:03:07,105 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:03:07,117 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:03:07,184 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:03:07,188 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:04:10,696 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:04:10,753 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:04:10,758 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:04:10,804 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:04:10,808 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:04:10,855 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 15:04:10,856 | INFO     | app.vectorstore.chroma_store | Searching for query: WHAT IS MACHINE LEARNING
+2026-07-09 15:04:10,857 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 15:04:10,938 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 15:04:10,938 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 15:04:10,938 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 15:04:10,939 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3797 characters.
+2026-07-09 15:04:10,939 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 15:19:08,304 | ERROR    | app.llm.ollama_client | LLM generation failed.
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_transports\default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_transports\default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+        pool_request.request
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 136, in handle_request
+    raise exc
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpcore\_sync\http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\app\llm\ollama_client.py", line 51, in generate
+    response = self.client.generate(
+        model=self.model,
+    ...<3 lines>...
+        }
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 281, in generate
+    return self._request(
+           ~~~~~~~~~~~~~^
+      GenerateResponse,
+      ^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 139, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 914, in send
+    response = self._send_handling_auth(
+        request,
+    ...<2 lines>...
+        history=[],
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+        request,
+        follow_redirects=follow_redirects,
+        history=history,
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_transports\default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+         ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Admin\AppData\Local\Programs\Python\Python313\Lib\contextlib.py", line 162, in __exit__
+    self.gen.throw(value)
+    ~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\httpx\_transports\default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+2026-07-09 15:19:47,572 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:19:47,573 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:19:53,813 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:19:54,018 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:19:54,018 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:19:54,366 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:19:54,367 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:20:05,612 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:20:05,612 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:20:11,461 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:20:11,606 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:20:11,607 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:20:11,947 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:20:11,948 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:20:42,292 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:20:42,514 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:20:42,519 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:20:42,565 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:20:42,567 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:22:03,511 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:22:03,562 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:22:03,567 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:22:03,623 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:22:03,625 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:22:03,654 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 15:22:03,655 | INFO     | app.vectorstore.chroma_store | Searching for query: what are technical skill  does vasantha have ?
+2026-07-09 15:22:03,655 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 15:22:03,791 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 15:22:03,791 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 15:22:03,791 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 15:22:03,791 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3818 characters.
+2026-07-09 15:22:03,792 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 15:22:07,849 | ERROR    | app.llm.ollama_client | LLM generation failed.
+Traceback (most recent call last):
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\app\llm\ollama_client.py", line 51, in generate
+    response = self.client.generate(
+        model=self.model,
+    ...<3 lines>...
+        }
+    )
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 281, in generate
+    return self._request(
+           ~~~~~~~~~~~~~^
+      GenerateResponse,
+      ^^^^^^^^^^^^^^^^^
+    ...<22 lines>...
+      stream=stream,
+      ^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 199, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\OneDrive\Desktop\WORK\RAG_2\.venv\Lib\site-packages\ollama\_client.py", line 145, in _request_raw
+    raise ConnectionError(CONNECTION_ERROR_MESSAGE) from None
+ConnectionError: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-07-09 15:28:07,740 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:28:07,741 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:28:13,636 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:28:13,778 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:28:13,778 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:28:14,167 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:28:14,167 | INFO     | app.container.container | Application Container initialized successfully.

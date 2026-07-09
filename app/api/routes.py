@@ -1,11 +1,10 @@
 from fastapi import APIRouter, Request
 from fastapi import UploadFile, File, HTTPException
-
+from app.api.schemas import IngestResponse
+from app.ingestion.pipeline import IngestionPipeline
 from app.config.settings import settings
 from pathlib import Path
 import shutil
-from app.api.schemas import IngestResponse
-from app.ingestion.pipeline import IngestionPipeline
 
 from app.api.schemas import (
     QueryRequest,
@@ -52,17 +51,10 @@ def stats(request: Request):
 
 
 
-@router.post(
-    "/query",
-    response_model=QueryResponse
-)
-def query(
-    request: Request,
-    body: QueryRequest,
-):
+@router.post("/query",  response_model=QueryResponse)
+def query(request: Request, body: QueryRequest,):
 
     container = request.app.state.container
-
     answer = container.query_pipeline.run(
         body.question
     )
@@ -72,13 +64,8 @@ def query(
     )
 
 
-@router.post(
-    "/ingest",
-    response_model=IngestResponse
-)
-def ingest(
-    file: UploadFile = File(...)
-):
+@router.post("/ingest", response_model=IngestResponse)
+def ingest(file: UploadFile = File(...)):
 
     upload_dir = Path("data/raw")
     upload_dir.mkdir(parents=True, exist_ok=True)
