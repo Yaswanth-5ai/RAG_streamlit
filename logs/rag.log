@@ -1344,3 +1344,47 @@ ConnectionError: Failed to connect to Ollama. Please check that Ollama is downlo
 2026-07-09 15:28:13,778 | INFO     | app.services.document_service | Document Service initialized.
 2026-07-09 15:28:14,167 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
 2026-07-09 15:28:14,167 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:28:28,456 | INFO     | app.container.container | Initializing Application Container.
+2026-07-09 15:28:28,456 | INFO     | app.embedding.embedder | Loading embedding model: all-MiniLM-L6-v2
+2026-07-09 15:28:34,342 | INFO     | app.embedding.embedder | Embedding model loaded successfully.
+2026-07-09 15:28:34,469 | INFO     | app.vectorstore.chroma_store | Connected to collection: rag_documents
+2026-07-09 15:28:34,469 | INFO     | app.services.document_service | Document Service initialized.
+2026-07-09 15:28:34,820 | INFO     | app.llm.ollama_client | Initialized Ollama client using model: qwen3:4b
+2026-07-09 15:28:34,821 | INFO     | app.container.container | Application Container initialized successfully.
+2026-07-09 15:28:34,837 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:28:34,838 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:28:34,966 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:28:34,970 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:28:34,973 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:28:34,975 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:28:35,020 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:28:35,022 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:28:35,025 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:28:35,027 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:29:07,315 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:29:07,366 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:29:07,371 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 15:29:07,419 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 15:29:07,421 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 15:29:07,446 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 15:29:07,446 | INFO     | app.vectorstore.chroma_store | Searching for query: what are the technical skill does vasantha puvvada have based on her resume ?
+2026-07-09 15:29:07,446 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 15:29:07,525 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 15:29:07,525 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 15:29:07,526 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 15:29:07,526 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3488 characters.
+2026-07-09 15:29:07,527 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 15:35:40,046 | INFO     | app.llm.ollama_client | LLM response generated in 392.52 sec.
+2026-07-09 21:17:16,723 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 21:17:19,518 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 21:17:19,576 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 21:17:20,188 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 21:17:20,207 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 21:17:20,401 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 21:17:20,445 | INFO     | app.vectorstore.chroma_store | Searching for query: how much experience does she has 
+2026-07-09 21:17:20,455 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 21:17:21,007 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 21:17:21,020 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 21:17:21,031 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 21:17:21,042 | INFO     | app.prompt.builder | Prompt built successfully. Length: 2314 characters.
+2026-07-09 21:17:21,051 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
