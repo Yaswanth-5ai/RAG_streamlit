@@ -1,0 +1,11 @@
+.venv
+__pycache__
+.git
+.pytest_cache
+.streamlit
+*.pyc
+*.pyo
+*.pyd
+.env
+chroma_db
+data/raw

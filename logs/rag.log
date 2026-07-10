@@ -1388,3 +1388,18 @@ ConnectionError: Failed to connect to Ollama. Please check that Ollama is downlo
 2026-07-09 21:17:21,031 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
 2026-07-09 21:17:21,042 | INFO     | app.prompt.builder | Prompt built successfully. Length: 2314 characters.
 2026-07-09 21:17:21,051 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 21:20:28,677 | INFO     | app.llm.ollama_client | LLM response generated in 187.62 sec.
+2026-07-09 21:23:59,878 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 21:23:59,933 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 21:23:59,939 | INFO     | app.vectorstore.chroma_store | Fetching indexed documents.
+2026-07-09 21:23:59,986 | INFO     | app.vectorstore.chroma_store | Found 3 document(s).
+2026-07-09 21:23:59,989 | INFO     | app.vectorstore.chroma_store | Current indexed chunks: 352
+2026-07-09 21:24:00,032 | INFO     | app.retriever.retriever | Retrieving top 3 documents.
+2026-07-09 21:24:00,033 | INFO     | app.vectorstore.chroma_store | Searching for query: how much experience does yaswanth have and what the common skill they both have
+2026-07-09 21:24:00,034 | INFO     | app.embedding.embedder | Generating query embedding.
+2026-07-09 21:24:00,085 | INFO     | app.vectorstore.chroma_store | Retrieved 3 document(s).
+2026-07-09 21:24:00,086 | INFO     | app.retriever.retriever | Retrieved 3 documents.
+2026-07-09 21:24:00,086 | INFO     | app.prompt.builder | Building prompt using 3 document(s).
+2026-07-09 21:24:00,086 | INFO     | app.prompt.builder | Prompt built successfully. Length: 3940 characters.
+2026-07-09 21:24:00,087 | INFO     | app.llm.ollama_client | Sending prompt to Ollama.
+2026-07-09 21:34:31,474 | INFO     | app.llm.ollama_client | LLM response generated in 631.39 sec.

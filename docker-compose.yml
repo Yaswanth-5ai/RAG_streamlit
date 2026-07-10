@@ -1,0 +1,30 @@
+services:
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+
+    ports:
+      - "8000:8000"
+
+    volumes:
+      - ./data:/app/data
+      - ./chroma_db:/app/chroma_db
+
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+
+    ports:
+      - "8501:8501"
+
+    depends_on:
+      - backend
+
+    environment:
+      - API_BASE_URL=http://backend:8000

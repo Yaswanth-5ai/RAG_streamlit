@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+import os
 
 
 @dataclass(frozen=True)
@@ -28,7 +29,12 @@ class Settings:
 
     LLM_MODEL = "qwen3:4b"
 
-    OLLAMA_HOST = "http://localhost:11434"
+    #OLLAMA_HOST = "http://localhost:11434"
+
+    OLLAMA_HOST = os.getenv(
+        "OLLAMA_HOST",
+        "http://localhost:11434"
+    )
 
     # ==========================
     # Retrieval
