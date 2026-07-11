@@ -1,30 +1,30 @@
 services:
 
   backend:
-    build:
-      context: .
-      dockerfile: Dockerfile.backend
+    image: rag-backend
+
+    container_name: rag-backend
 
     ports:
       - "8000:8000"
+
+    environment:
+      - OLLAMA_HOST=http://host.docker.internal:11434
 
     volumes:
       - ./data:/app/data
       - ./chroma_db:/app/chroma_db
 
-    environment:
-      - OLLAMA_HOST=http://host.docker.internal:11434
-
   frontend:
-    build:
-      context: .
-      dockerfile: Dockerfile.frontend
+    image: rag-frontend
+
+    container_name: rag-frontend
 
     ports:
       - "8501:8501"
 
-    depends_on:
-      - backend
-
     environment:
       - API_BASE_URL=http://backend:8000
+
+    depends_on:
+      - backend
