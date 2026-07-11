@@ -1,87 +1,128 @@
-# 🚀 Production RAG System
+# 🚀 Enterprise RAG Assistant
 
-A production-ready **Retrieval-Augmented Generation (RAG)** application that enables users to ask questions about PDF documents using **semantic search** and a **local Large Language Model (LLM)**.
+A production-grade **Retrieval-Augmented Generation (RAG)** system that enables users to upload documents and interact with them using natural language through semantic search and local Large Language Models.
 
-The system extracts content from PDF documents, splits them into meaningful chunks, generates vector embeddings, stores them in **ChromaDB**, retrieves the most relevant information based on the user's query, and generates accurate answers using **Ollama**.
+The system extracts content from documents, intelligently chunks the text, generates embeddings using Sentence Transformers, stores vectors in **ChromaDB**, retrieves relevant context using semantic similarity, and generates accurate responses using **Ollama-powered LLMs**.
 
 ---
 
-## 📌 Features
+# 📌 Features
 
-- 📄 PDF Document Ingestion
-- ✂️ Intelligent Text Chunking
-- 🧠 Sentence Transformer Embeddings
-- 🔍 Semantic Search using ChromaDB
-- 🤖 Local LLM Integration (Ollama)
-- 📝 Prompt Engineering
-- 📊 Structured Logging
-- ⚠️ Custom Exception Handling
-- 🏗️ Modular & Scalable Architecture
-- 🔄 Easy to Extend for APIs and UI
+## Backend Features
+
+* 📄 PDF Document Ingestion
+* 🗑️ Document Deletion Support
+* 📋 Document Metadata Tracking
+* ✂️ Intelligent Text Chunking
+* 🧠 Sentence Transformer Embeddings
+* 🔍 Semantic Search with ChromaDB
+* 🤖 Local LLM Integration using Ollama
+* 📝 Prompt Engineering
+* 📊 Structured Logging
+* ⚠️ Custom Exception Handling
+* 📈 Health and Statistics APIs
+* 📚 Swagger Documentation
+* 🏗️ Dependency Injection Ready
+* 🔄 Modular Architecture
+
+---
+
+## Frontend Features
+
+* 💬 ChatGPT-style Conversation Interface
+* 📂 Sidebar Document Management
+* 📤 File Upload Support
+* 📊 Real-time Statistics Dashboard
+* 📑 Document Metadata Visualization
+* 🧹 Chat History Management
+* 🗑️ One-click Document Removal
+
+---
+
+## DevOps Features
+
+* 🐳 Dockerized Backend
+* 🐳 Dockerized Frontend
+* 📦 Docker Compose Support
+* 🔄 Persistent Storage Volumes
+* 🚀 Deployment Ready
 
 ---
 
 # 🏛️ System Architecture
 
-```
-                    PDF Documents
-                          │
-                          ▼
-                 Document Loader
-                          │
-                          ▼
-                Document Splitter
-                          │
-                          ▼
-            SentenceTransformer Embeddings
-                          │
-                          ▼
-                     ChromaDB
-                          │
-                          ▼
-                     Retriever
-                          │
-                          ▼
-                  Prompt Builder
-                          │
-                          ▼
-                   Ollama (LLM)
-                          │
-                          ▼
-                    Generated Answer
+```text
+                     Upload Document
+                            │
+                            ▼
+                    FastAPI Backend
+                            │
+                            ▼
+                    Document Loader
+                            │
+                            ▼
+                   Document Splitter
+                            │
+                            ▼
+             SentenceTransformer Embeddings
+                            │
+                            ▼
+                        ChromaDB
+                            │
+                            ▼
+                        Retriever
+                            │
+                            ▼
+                    Prompt Builder
+                            │
+                            ▼
+                     Ollama LLM
+                            │
+                            ▼
+                     Generated Answer
+                            │
+                            ▼
+                    Streamlit Frontend
 ```
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 RAG_2
 │
 ├── app
+│   ├── api
 │   ├── config
+│   ├── container
 │   ├── core
 │   ├── embedding
 │   ├── ingestion
 │   ├── llm
 │   ├── prompt
 │   ├── query
-│   ├── retriever
+│   ├── retrieval
+│   ├── storage
 │   └── vectorstore
 │
+├── frontend
+│   ├── api
+│   ├── components
+│   └── app.py
+│
 ├── data
-│   ├── raw
-│   └── vector_db
+│   └── raw
+│
+├── chroma_db
 │
 ├── logs
 │
-├── scripts
-│   ├── ingest.py
-│   └── query.py
-│
-├── tests
-│
-├── requirements.txt
+├── Dockerfile.backend
+├── Dockerfile.frontend
+├── docker-compose.yml
+├── pyproject.toml
+├── uv.lock
 └── README.md
 ```
 
@@ -89,124 +130,112 @@ RAG_2
 
 # ⚙️ Technology Stack
 
-| Category | Technology |
-|----------|------------|
-| Language | Python 3.13 |
-| Framework | LangChain |
-| Vector Database | ChromaDB |
-| Embedding Model | all-MiniLM-L6-v2 |
-| LLM | Ollama (Qwen3:4B) |
-| PDF Loader | PyPDFLoader |
-| Logging | Python Logging |
-| Exception Handling | Custom Exceptions |
+| Category          | Technology       |
+| ----------------- | ---------------- |
+| Language          | Python 3.13      |
+| Backend           | FastAPI          |
+| Frontend          | Streamlit        |
+| Framework         | LangChain        |
+| Vector Database   | ChromaDB         |
+| Embedding Model   | all-MiniLM-L6-v2 |
+| LLM               | Ollama           |
+| Default Model     | Qwen3:4B         |
+| Package Manager   | uv               |
+| Containerization  | Docker           |
+| Orchestration     | Docker Compose   |
+| Logging           | Python Logging   |
+| API Documentation | Swagger/OpenAPI  |
 
 ---
 
 # 🔄 RAG Workflow
 
-### Document Ingestion
+## Document Ingestion
 
-```
-PDF
-
-↓
-
-Load Documents
-
-↓
-
+```text
+Upload Document
+        ↓
+Load Document
+        ↓
 Split into Chunks
-
-↓
-
+        ↓
 Generate Embeddings
-
-↓
-
+        ↓
 Store in ChromaDB
+        ↓
+Store Metadata
 ```
 
 ---
 
-### Question Answering
+## Question Answering
 
-```
+```text
 User Question
-
-↓
-
+      ↓
 Generate Query Embedding
-
-↓
-
+      ↓
 Semantic Search
-
-↓
-
+      ↓
 Retrieve Top K Chunks
-
-↓
-
+      ↓
 Build Prompt
-
-↓
-
+      ↓
 Ollama
-
-↓
-
-Answer
+      ↓
+Generated Answer
 ```
 
 ---
 
 # 🚀 Installation
 
-Clone the repository
+## Clone Repository
 
 ```bash
 git clone https://github.com/Yaswanth-5ai/RAG_chatbot.git
-
 cd RAG_chatbot
 ```
 
-Create virtual environment
+---
+
+## Install Dependencies
 
 ```bash
-python -m venv .venv
+uv sync
 ```
 
-Activate
+Activate environment:
 
-Windows
+### Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Linux / Mac
+### Linux / Mac
 
 ```bash
 source .venv/bin/activate
 ```
 
-Install dependencies
+---
 
-```bash
-pip install -r requirements.txt
+# 🤖 Install Ollama
+
+Install:
+
+```text
+https://ollama.com/download
 ```
 
-Install Ollama
-
-https://ollama.com
-
-Download the model
+Download model:
 
 ```bash
 ollama pull qwen3:4b
 ```
 
-Start Ollama
+Start Ollama:
 
 ```bash
 ollama serve
@@ -214,89 +243,156 @@ ollama serve
 
 ---
 
-# 📄 Index Documents
+# 🔧 Configuration
 
-Place PDF files inside
+Configuration file:
 
+```text
+app/config/settings.py
 ```
-data/raw/
-```
 
-Run
+Example:
 
-```bash
-python -m scripts.ingest
+```python
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+
+LLM_MODEL = "qwen3:4b"
+
+OLLAMA_HOST = "http://localhost:11434"
+
+TOP_K = 5
+
+CHUNK_SIZE = 1000
+
+CHUNK_OVERLAP = 200
 ```
 
 ---
 
-# 💬 Ask Questions
+# 🔄 Supported LLM Models
+
+To switch models, change:
+
+```python
+LLM_MODEL = "qwen3:4b"
+```
+
+Examples:
+
+### Fast Models
+
+```text
+phi3:mini
+qwen2.5:3b
+```
+
+### Balanced Models
+
+```text
+qwen3:4b
+gemma3:4b
+```
+
+### Large Models
+
+```text
+llama3:8b
+qwen2.5:7b
+```
+
+---
+
+# 🚀 Run Application Locally
+
+## Backend
 
 ```bash
-python -m scripts.query
+uv run uvicorn app.api.main:app --reload
 ```
 
-Example
+Swagger UI:
 
-```
-Ask a question:
-
-What is Machine Learning?
+```text
+http://localhost:8000/docs
 ```
 
-Output
+---
 
+## Frontend
+
+```bash
+uv run streamlit run frontend/app.py
 ```
-Machine learning is a field of study that enables computers
-to learn from data without being explicitly programmed.
+
+Frontend:
+
+```text
+http://localhost:8501
 ```
+
+---
+
+# 🐳 Docker Deployment
+
+Build backend image:
+
+```bash
+docker build -t rag-backend -f Dockerfile.backend .
+```
+
+Build frontend image:
+
+```bash
+docker build -t rag-frontend -f Dockerfile.frontend .
+```
+
+Start all services:
+
+```bash
+docker compose up
+```
+
+Access:
+
+Frontend:
+
+```text
+http://localhost:8501
+```
+
+Backend:
+
+```text
+http://localhost:8000/docs
+```
+
+---
+
+# 📚 Available API Endpoints
+
+| Method | Endpoint                | Description            |
+| ------ | ----------------------- | ---------------------- |
+| GET    | `/health`               | Health Check           |
+| GET    | `/stats`                | Application Statistics |
+| POST   | `/ingest`               | Upload Document        |
+| GET    | `/documents`            | List Documents         |
+| DELETE | `/documents/{filename}` | Delete Document        |
+| POST   | `/query`                | Ask Questions          |
 
 ---
 
 # 📊 Logging
 
-Application logs are stored inside
+Logs include:
 
-```
-logs/
-```
-
-Logs include
-
-- Document Loading
-- Chunk Generation
-- Embedding Generation
-- Vector Search
-- Prompt Building
-- LLM Response Time
-- Errors & Exceptions
-
----
-
-# ⚠️ Exception Handling
-
-Custom exceptions are implemented for
-
-- Document Loading
-- Document Splitting
-- Embedding Generation
-- Vector Database
-- Retrieval
-- Prompt Builder
-- LLM
-- Pipeline
-
----
-
-# 🎯 Current Features
-
-- ✅ Local LLM (Ollama)
-- ✅ Semantic Search
-- ✅ Modular Architecture
-- ✅ Logging
-- ✅ Exception Handling
-- ✅ Configuration Management
-- ✅ ChromaDB Persistence
+* Document Loading
+* Chunk Generation
+* Embedding Generation
+* Vector Search
+* Prompt Building
+* LLM Inference
+* API Requests
+* Error Handling
 
 ---
 
@@ -304,50 +400,57 @@ Custom exceptions are implemented for
 
 ## Version 1.0 ✅
 
-- PDF Loader
-- Chunking
-- Embeddings
-- ChromaDB
-- Semantic Search
-- Ollama Integration
-- Logging
-- Exception Handling
+* PDF Loader
+* Chunking
+* Embeddings
+* ChromaDB
+* Ollama Integration
+* Logging
+* Exception Handling
 
 ---
 
-## Version 2.0 (In Progress)
+## Version 2.0 ✅
 
-- FastAPI Backend
-- REST APIs
-- Swagger Documentation
-- Streamlit Frontend
-- File Upload
-- Multiple PDF Support
+* FastAPI Backend
+* REST APIs
+* Swagger Documentation
+* Streamlit Frontend
+* File Upload
+* Multiple Document Support
+* Metadata Management
+* Docker Support
 
 ---
 
 ## Version 3.0
 
-- Hybrid Search
-- Reranking
-- Query Rewriting
-- Conversation Memory
-- Authentication
-- Docker
-- Deployment
+* Source Citations
+* DOCX Support
+* Hybrid Search
+* Reranking
+* Authentication
+* Cloud Deployment
+* CI/CD Pipeline
 
 ---
 
 # 👨‍💻 Author
 
-**Yaswanth Sai**
+## Yaswanth Sai
 
-GitHub
+GitHub:
 
-https://github.com/Yaswanth-5ai
+[Yaswanth Sai GitHub Profile](https://github.com/Yaswanth-5ai/RAG_streamlit.git)
+
+LinkedIn:
+
+[yaswanth linkedin](https://www.linkedin.com/in/yaswanth-sai-7a599b1a9)
 
 ---
 
-# ⭐ If you found this project useful
+# ⭐ Support
 
-Please consider giving it a ⭐ on GitHub.
+If you found this project useful, consider giving it a ⭐ on GitHub.
+
+It helps others discover the project and supports future improvements.
